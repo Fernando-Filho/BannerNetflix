@@ -24,20 +24,20 @@ main
     transform: translate(-50%, -50%);
     border-radius: 10px;
     background-color: rgb(0, 0, 0);
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 
 #container
 {
-    position: relative;
+    position: absolute;
     height: 90%;
     width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+/* Configuração do topo do site */
 #topo
 {
     position: relative;
@@ -115,35 +115,67 @@ main
     border-radius: 50%;
 }
 
-
+/* Configuração do miolo do site */
+#container .bannerPrincipal, .dadosFilme, .separador{
+    position: relative;
+    display: inline-block;
+    height: 90%;
+}
 #container .bannerPrincipal
 {
-    position: absolute;
-    height: 90%;
     width: 35%;
     background-color: green;
-    display: inline-block;
 }
 
+/* separação do filme principal para os dados a direita. */
+#container .separador{
+    width: 10%;
+    left: -0.4%;
+    background-color: red;
+}
 #container .dadosFilme
 {
-    position: absolute;
-    left: 35%;
-    height: 90%;
-    width: 65%;
-    display: inline-block;
+    width: 55%;
+    top: -90.6%;
+    left: 44.93%;
+
 }
 
+
+/* Dados do a direita */
 #container .cabeçario
 {
     position: relative;
-    height: 30%;
+    height: 25%;
     width: 100%;
-    background-color: black;
 
 }
-
-.cabeçario h1, p, ion-icon, h2
+.linha1	{
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    background-color: blue;
+}
+.linha1 .titulo, .nota, ion-icon
+{
+    display: inline-block;
+}
+.linha1 .titulo{
+    font-size: 0.8em;
+}
+.linha1 .nota{
+    position: absolute;
+    top: -30%;
+    font-size: 1.5em;
+    background-color: red;
+}
+.linha1 ion-icon{
+    position: absolute;
+    top: 90%;
+    font-size: 1.5em;
+    background-color: red;
+}
+.linha2 h2, p, ion-icon
 {
     display: inline-block;
 }
@@ -151,8 +183,6 @@ main
     position: absolute;
     height: 30%;
     width: 80%;
-    top: 45%;
-    transform: translate( 0%, -50%);
     font-size: 0.7em;
     display: inline-block;
 }
@@ -161,8 +191,6 @@ main
     height: 30%;
     width: 20%;
     left: 80%;
-    top: 45%;
-    transform: translate( 0%, -50%);
     display: inline-block;
 }
 
@@ -173,8 +201,6 @@ main
 }
 .nota ion-icon{
     position: relative;
-    left: 50%;
-    transform: translate(-75%, -50%);
     font-size: 1.6em;
     color: yellow;
 }
@@ -194,9 +220,10 @@ main
 
 
 
-#linhaApoio{
+.linhaApoio{
     height: 1px;
     width: 100%;
+    bottom: 0%;
     background-color: grey;
 }
 
@@ -225,15 +252,14 @@ main
 
 .demaisFilmes
 {
-    position: relative;
+    position: absolute;
     height: 25%;
-    top: 45%;
-    
     width: 100%;
+    bottom: 0%;
     background-color: red;
 }
 .demaisFilmes a{
-    position: absolute;
+    position: relative;
     height: 85%;
     width: 30%;
     bottom: 0%;
