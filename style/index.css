@@ -1,17 +1,21 @@
-*{
+*
+{
     padding: 0;
     margin: 0;
     color: white;
     text-decoration: none;
 }
-body{
+
+body
+{
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(135deg, #f64444,#611cad);
+    background-image: linear-gradient(135deg, #f64444, #611cad);
 }
 
-main{
+main
+{
     position: absolute;
     height: 80vh;
     width: 90vw;
@@ -19,77 +23,220 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-    background-color: black;
-    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
 }
 
 
-#container{
+#container
+{
     position: relative;
     height: 90%;
     width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(102, 100, 100);
 }
-#topo{
+
+#topo
+{
     position: relative;
     height: 10%;
     width: 100%;
     background-color: black;
 }
-#topo .elemento{
+
+#topo .elemento
+{
     height: 100%;
     width: 33.33%;
     display: inline-block;
 }
 
-#topo .o1{
+#topo .o1
+{
     position: absolute;
     background-color: black;
 }
-#topo h3{
+
+#topo h3
+{
     position: relative;
     top: 50%;
-    transform: translate(0%,-50%);
+    transform: translate(0%, -50%);
     color: red;
     font-size: 3em;
 }
-#topo .o2{
+
+#topo .o2
+{
     position: absolute;
     left: 40%;
     transform: translate(-70%);
     background-color: black;
 }
-.o2 p, ion-icon{
+
+.o2 p, ion-icon
+{
     position: relative;
     display: inline-block;
     top: 50%;
-    transform: translate(0%,-50%);
+    transform: translate(0%, -50%);
+    color: grey;
 }
 
-#topo .o3{
+#topo .o3
+{
     position: absolute;
     right: 0%;
     background-color: black;
 }
-.o3 ion-icon{
+
+.o3 ion-icon
+{
     position: absolute;
     left: 70%;
 }
-.o3 a{
+
+.o3 a
+{
     position: relative;
     height: 100%;
     left: 80%;
 }
-.o3 img{
+
+.o3 img
+{
     position: absolute;
     top: 50%;
-    transform: translate(0%,25%);
+    transform: translate(0%, 25%);
     height: 40px;
     width: 40px;
     border-radius: 50%;
+}
+
+
+#container .bannerPrincipal
+{
+    position: absolute;
+    height: 90%;
+    width: 35%;
+    background-color: green;
+    display: inline-block;
+}
+
+#container .dadosFilme
+{
+    position: absolute;
+    left: 35%;
+    height: 90%;
+    width: 65%;
+    display: inline-block;
+}
+
+#container .cabeçario
+{
+    position: relative;
+    height: 30%;
+    width: 100%;
+    background-color: black;
 
 }
 
+.cabeçario h1, p, ion-icon, h2
+{
+    display: inline-block;
+}
+.titulo{
+    position: absolute;
+    height: 30%;
+    width: 80%;
+    top: 45%;
+    transform: translate( 0%, -50%);
+    font-size: 0.7em;
+    display: inline-block;
+}
+.nota{
+    position: absolute;
+    height: 30%;
+    width: 20%;
+    left: 80%;
+    top: 45%;
+    transform: translate( 0%, -50%);
+    display: inline-block;
+}
+
+.nota h2{
+    position: relative;
+    left: 35%;
+    font-size: 1.1em;
+}
+.nota ion-icon{
+    position: relative;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    font-size: 1.6em;
+    color: yellow;
+}
+.linha2{
+    position: absolute;
+    top: 75%;
+    transform: translate( 0%, -50%);
+    font-size: 0.8em;
+}
+.linha2 p{
+    
+    padding: 10px;
+    color: grey;
+    border-right: solid 1px grey;
+}
+
+
+
+
+#linhaApoio{
+    height: 1px;
+    width: 100%;
+    background-color: grey;
+}
+
+.dadosFilme .navegation
+{
+    position: absolute;
+    height: 10%;
+    top: 35%;
+    width: 100%;
+}
+.navegation a{
+    color: grey;
+    margin-right: 18%;
+}
+.sinopse
+{
+    position: absolute;
+    height: 10%;
+    top: 45%;
+    width: 100%;
+}
+.sinopse label{
+    color: grey;
+    padding-right: 40px;
+}
+
+.demaisFilmes
+{
+    position: relative;
+    height: 25%;
+    top: 45%;
+    
+    width: 100%;
+    background-color: red;
+}
+.demaisFilmes a{
+    position: absolute;
+    height: 85%;
+    width: 30%;
+    bottom: 0%;
+    background-color: blue;
+    display: inline-block;
+}
