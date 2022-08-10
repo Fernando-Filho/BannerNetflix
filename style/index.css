@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+body{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(135deg, #f64444,#611cad);
+}
+
+main{
+    position: absolute;
+    height: 80vh;
+    width: 90vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.5);
+}
+
+
+#container{
+    position: relative;
+    height: 90%;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(102, 100, 100);
+}
+#topo{
+    position: relative;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+}
+#topo .elemento{
+    height: 100%;
+    width: 33.33%;
+    display: inline-block;
+}
+
+#topo .o1{
+    position: absolute;
+    background-color: black;
+}
+#topo h3{
+    position: relative;
+    top: 50%;
+    transform: translate(0%,-50%);
+    color: red;
+    font-size: 3em;
+}
+#topo .o2{
+    position: absolute;
+    left: 40%;
+    transform: translate(-70%);
+    background-color: black;
+}
+.o2 p, ion-icon{
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+
+#topo .o3{
+    position: absolute;
+    right: 0%;
+    background-color: black;
+}
+.o3 ion-icon{
+    position: absolute;
+    left: 70%;
+}
+.o3 a{
+    position: relative;
+    height: 100%;
+    left: 80%;
+}
+.o3 img{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,25%);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+
+}
+
