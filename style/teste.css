@@ -1,25 +1,32 @@
+/* Base de tudo */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #ffffff;
-    border: solid 1px #ffffff;
+    color: #808080;
+    border: solid 1px white;
 }
-body
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #464646;
+}
+main
 {
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 70%;
     background-image: linear-gradient(135deg, #f64444, #611cad);
     overflow: hidden;
 }
-main{
+section{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90%;
+    height: 75%;
     width: 90%;
     background-color: #000000;
     box-shadow: 5px 20px 20px #00000066;
@@ -30,31 +37,19 @@ main{
     height: 95%;
     width: 90%;
     flex-direction: column;
-    background-color: #ff0000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+/* ______________________________ */
+/* Menu */
 #container #menu{
     display: flex;
     flex-direction: row;
     height: 10%;
-    background-color: #0a20e9;
 }
 #menu .left{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 50%;
+    width: 30%;
 }
 .left .logo{
     display: flex;
@@ -72,43 +67,42 @@ main{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    width: 50%;
+    width: 75%;
 }
 
 .right .alarme{
-    height: 40px;
-    width: 40px;
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
+    margin-right: 10px;
 }
 .right .imagemUser{
     height: 40px;
     width: 40px;
     border-radius: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ______________________________ */
 
 
 
 
 
 #container #container_miolo{
-    background-color: #008000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 85%;
+}
+#container_miolo #container_main_image, #container_dados{
+    height: 100%;
+}
+#container_main_image{
+    width: 40%;
+}
+#container_main_image img{
+    height: 100%;
+}
+#container_dados{
+    width: 50%;
+
 }
