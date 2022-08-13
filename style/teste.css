@@ -62,6 +62,9 @@ section{
     justify-content: space-evenly;
     width: 77%;
 }
+.left .search:hover{
+    cursor: pointer;
+}
 .left .search{
     display: flex;
     flex-direction: row;
@@ -165,6 +168,9 @@ section{
     flex-direction: row;
     justify-content: space-between;
 }
+.inputs label:hover{
+    cursor: pointer;
+}
 .inputs input[type="radio"]{
     display: none;
 }
@@ -180,7 +186,6 @@ input[type="radio"]:checked + label{
     height: 100%;
     padding-top: 20px;
     text-align: justify;
-    background-color: red;
 }
 
 .info_dados .Trailers, .Mais, .Detalhes{
@@ -193,5 +198,36 @@ input[type="radio"]:checked + label{
 
 
 #container_dados #outros_filmes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     height: 35%;
+    width: 100%;
+}
+#outros_filmes h2{
+    height: 10%;
+}
+#outros_filmes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#outros_filmes #opcoes{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 80%;
+    width: 110%;
+}
+#opcoes button{
+    height: 100%;
+    width: 30%;
+}
+#opcoes button img{
+    height: 100%;
+    width: 100%;
+}
+#opcoes button:hover{
+    cursor: pointer;
 }
