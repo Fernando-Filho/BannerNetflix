@@ -192,9 +192,14 @@ input[type="radio"]:checked + label{
     height: 100%;
     width: 100%;
 }
-#info #Sinopse .mais_dados{
+#info #sinopse .mais_dados{
     display: flex;
     flex-direction: row;
+    width: 100%;
+
+}
+#info #sinopse h4{
+    width: 20%;
 }
 #info #sinopse p{
     color: white;
