@@ -1,266 +1,247 @@
-*
-{
+/* Base de tudo */
+*{
     padding: 0;
     margin: 0;
-    color: white;
-    text-decoration: none;
-}
+    box-sizing: border-box;
+    color: #808080;
 
-body
-{
-    position: relative;
+
+}
+body{
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(135deg, #f64444, #611cad);
+    background-color: #464646;
 }
-
 main
 {
-    position: absolute;
-    height: 90vh;
-    width: 90vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    background-image: linear-gradient(135deg, #f64444, #611cad);
+    overflow: hidden;
 }
-
-
-#container
-{
-    position: absolute;
-    height: 90%;
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
     width: 90%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-color: #000000;
+    box-shadow: 5px 20px 20px #00000066;
 }
-/* Configuração do topo do site */
-#topo
-{
-    position: relative;
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    width: 90%;
+    flex-direction: column;
+}
+/* ______________________________ */
+/* Menu */
+#container #menu{
+    display: flex;
+    flex-direction: row;
     height: 10%;
-    width: 100%;
+}
+#menu .left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+}
+.left .logo{
+    display: flex;
+    align-items: flex-start;
+    width: 33%;
+}
+.left .busca{
+    display: flex;
+    justify-content: space-evenly;
+    width: 77%;
+}
+.left .search:hover{
+    cursor: pointer;
+}
+.left .search{
+    display: flex;
+    flex-direction: row;
+}
+.search .search_icon{
+    font-size: 20px;
+}
+#menu .right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 75%;
 }
 
-#topo .elemento
-{
-    height: 100%;
-    width: 33.33%;
-    display: inline-block;
+.right .alarme{
+    font-size: 25px;
+    margin-right: 30px;
 }
-
-#topo .o1
-{
-    position: absolute;
-}
-
-#topo h3
-{
-    position: relative;
-    top: 50%;
-    transform: translate(0%, -50%);
-    color: red;
-    font-size: 3em;
-}
-
-#topo .o2
-{
-    position: absolute;
-    left: 40%;
-    transform: translate(-70%);
-}
-
-.o2 p, ion-icon
-{
-    position: relative;
-    display: inline-block;
-    top: 50%;
-    transform: translate(0%, -50%);
-    color: grey;
-}
-
-#topo .o3
-{
-    position: absolute;
-    right: 0%;
-}
-
-.o3 ion-icon
-{
-    position: absolute;
-    left: 70%;
-}
-
-.o3 a
-{
-    position: relative;
-    height: 100%;
-    left: 80%;
-}
-
-.o3 img
-{
-    position: absolute;
-    top: 50%;
-    transform: translate(0%, 25%);
+.right .imagemUser{
     height: 40px;
     width: 40px;
     border-radius: 50%;
 }
+/* ______________________________ */
 
-/* Configuração do miolo do site */
-#container .bannerPrincipal, .dadosFilme, .separador{
-    position: relative;
-    display: inline-block;
-    height: 90%;
+
+
+
+
+#container #container_miolo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 85%;
 }
-#container .bannerPrincipal
-{
-    width: 35%;
-}
-.bannerPrincipal img{
-    width: 100%;
+#container_miolo #container_main_image, #container_dados{
     height: 100%;
 }
-
-/* separação do filme principal para os dados a direita. */
-#container .separador{
-    width: 10%;
-    left: -0.4%;
+#container_main_image{
+    width: 35%;
+    background-image: url(https://picsum.photos/750/1000);
 }
-#container .dadosFilme
-{
+#container_main_image .desfoque{
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.99) 99%);
+}
+
+
+#container_dados{
+    display: flex;
+    flex-direction: column;
     width: 55%;
-    top: -90.6%;
-    left: 44.93%;
-
 }
-
-
-/* Dados do a direita */
-#container .cabeçario
-{
-    position: relative;
-    height: 25%;
-    width: 100%;
-
+#container_dados #titulo{
+    display: flex;
+    flex-direction: column;
+    height: 20%;
 }
-.linha1	{
-    position: absolute;
-    width: 100%;
-    top: 15%;
+#titulo .linha1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.linha1 .titulo, .nota, .icone
-{
-    display: inline-block;
-}
-.linha1 .titulo{
-    position: absolute;
-    height: 30%;
-    width: 80%;
-    font-size: 0.8em;
+.linha1 h1{
+    padding-top: 10px;
+    font-size: 2em;
+    color: white;
 }
 .linha1 .nota{
-    position: relative;
-    width: 15%;
-    top: -30%;
-    font-size: 1.5em;
-
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
 }
-.linha1 .icone{
-    position: relative;
-    width: 5%;
-    height: 100%;
-
+.nota:last-child{
+    font-size: 2em;
 }
-.icone ion-icon{
-    top: 50%;
-    font-size: 1.5em;
+.nota .star{
+    color: yellow;
+}
+#titulo .linha2{
+    display: flex;
+    flex-direction: row;
 }
 .linha2 p
 {
-    display: inline-block;
-}
-.nota{
-    position: absolute;
-    height: 30%;
-    width: 20%;
-    left: 80%;
-    display: inline-block;
-}
-
-.nota h2{
-    position: relative;
-    left: 35%;
-    font-size: 1.1em;
-}
-.nota ion-icon{
-    position: relative;
-    font-size: 1.6em;
-    color: yellow;
-}
-.linha2{
-    position: absolute;
-    top: 75%;
-    transform: translate( 0%, -50%);
     font-size: 0.8em;
-}
-.linha2 p{
-    
     padding: 10px;
-    color: grey;
     border-right: solid 1px grey;
 }
-
-
-
-
-.linhaApoio{
-    height: 1px;
-    width: 100%;
-    bottom: 0%;
-    background-color: grey;
+.linha2 p:nth-child(3){
+    border: none;
 }
 
-.dadosFilme .navegation
-{
-    position: absolute;
+#container_dados #info{
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inputs label:hover{
+    cursor: pointer;
+}
+.inputs input[type="radio"]{
+    display: none;
+}
+input[type="radio"] + label {
+    padding-top: 25px;
+    font-size: 1.5em;
+}
+input[type="radio"]:checked + label{
+    color: white;
+    border-bottom: solid 5px red;
+    transition: 0.3s;
+}
+#info .info_dados{
+    height: 100%;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.info_dados .Trailers, .Mais, .Detalhes{
+    display: none;
+}
+
+
+
+
+
+
+#container_dados #outros_filmes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 35%;
+    width: 100%;
+}
+#outros_filmes h2{
     height: 10%;
-    top: 35%;
-    width: 100%;
 }
-.navegation a{
-    color: grey;
-    margin-right: 18%;
+#outros_filmes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.sinopse
-{
-    position: absolute;
-    height: 10%;
-    top: 45%;
-    width: 100%;
+#outros_filmes #opcoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80%;
+    width: 110%;
 }
-.sinopse label{
-    color: grey;
-    padding-right: 40px;
-}
-
-.demaisFilmes
-{
-    position: absolute;
-    height: 25%;
-    width: 100%;
-    bottom: 0%;
-    background-color: red;
-}
-.demaisFilmes a{
-    position: relative;
-    height: 85%;
+#opcoes button{
+    height: 100%;
     width: 30%;
-    bottom: 0%;
-    background-color: blue;
-    display: inline-block;
+}
+#opcoes button:nth-child(1){
+    background: url("https://picsum.photos/id/237/300/200") center center;
+    background-size: cover;
+}
+#opcoes button:nth-child(2){
+    background: url("https://picsum.photos/id/237/300/200") center center;
+    background-size: cover;
+}
+#opcoes button:nth-child(3){
+    background: url("https://picsum.photos/id/237/300/200") center center;
+    background-size: cover;
+}
+#opcoes button .desfoque{
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)) ;
+}
+#opcoes button:hover{
+    cursor: pointer;
 }
