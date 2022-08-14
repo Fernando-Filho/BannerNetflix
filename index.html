@@ -65,7 +65,7 @@
 
                         <div id="info">
                             <div class="inputs">
-                                <input type="radio" name="info" id="Sinopse" onclick="info()">
+                                <input type="radio" name="info" id="Sinopse" onclick="info()" checked>
                                     <label for="Sinopse">SINOEPSE</label>
                                 <input type="radio" name="info" id="Trailers" onclick="info()">
                                     <label for="Trailers">TRAILERS</label>
@@ -75,17 +75,19 @@
                                     <label for="Detalhes">DETALHES</label>
                             </div>
                             <div class="info_dados">
-                                <div class="Sinopse">                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In odit illum quod vero quasi minima ipsum quis, molestiae assumenda esse cumque magni repudiandae eveniet ab culpa debitis ullam, iure rem?
-                                </p><br><br>
-            
-                                <label for="estrelas">Estrelas</label>
-                                <p id="estrelas">Scarlett Johansson, Tessa Thompson, Rober Downey Jr</p><br>
-            
-                                <label for="criador">Criado por</label>
-                                <p id="criador">Anthony Russo, Joe Russo</p><br>
-                                
-                                <label for="genero">Gereno</label>
-                                <p id="genero">Ação, Aventura, Fantasia</p></div>
+                                <div id="sinopse">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In odit illum quod vero quasi minima ipsum quis, molestiae assumenda esse cumque magni repudiandae eveniet ab culpa debitis ullam, iure rem?
+                                    </p>
+                                    <div class="mais_dados">
+                                        <h3>Estrelas</h3>
+                                        <p>Scarlett Johansson, Tessa Thompson, Rober Downey Jr</p><br>
+                
+                                        <h3>Criado por</h3>
+                                        <p>Anthony Russo, Joe Russo</p><br>
+                                        
+                                        <h3>Gereno</h3><p>Ação, Aventura, Fantasia</p>
+                                    </div>
+                                </div>
 
                                 <div class="Trailers">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/3Ev5dB-IwxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -112,6 +114,5 @@
     <script src="js/index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-Basic usage
 </body>
 </html>
