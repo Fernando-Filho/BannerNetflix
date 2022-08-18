@@ -185,7 +185,7 @@ input[type="radio"]:checked + label{
     border-bottom: solid 5px red;
     transition: 0.3s;
 }
-#info #sinopse{
+#info # 	{
     display: flex;
     flex-direction: column;
     text-align: justify;
@@ -208,12 +208,6 @@ input[type="radio"]:checked + label{
 .info_dados .Trailers, .Mais, .Detalhes{
     display: none;
 }
-
-
-
-
-
-
 #container_dados #outros_filmes{
     display: flex;
     flex-direction: column;
